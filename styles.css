@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.container-fluid {
+	background-color:#242424;
+	color: white;
+	font-family: Poppins, 'PT Serif', 'Times New Roman', Times, serif, sans-serif;
+}
+
+#title {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	font-weight: bold;
+	font-size: 3.5rem;
+	margin-bottom: 10rem;
+
+}
+
+#title > a {
+	text-decoration: none;
+	color: white;
+}
+
+#myBtn {
+	background: transparent;
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	outline: none;
+	font-size: 18px;
+	color: #e50000;
+	cursor: pointer;
+	padding: 14px;
+	border: 3px solid #e50000;
+	border-radius: 30px;
+}
+
+#myBtn:hover {
+    color: #ff7f7f;
+    border: 3px solid #ff7f7f;
+}
+
+ul {
+	text-align: center;
+    list-style-type: none;
+    margin: none;
+    padding: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    border-right: 1px solid white;
+    cursor: pointer;
+}
+
+li a {
+    position: relative;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a:hover {
+    color: #e50000;
+    font-weight: bold;
+}
+
+section {
+	justify-content: space-between;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-bottom: 8rem;
+	position: relative;
+}
+
+section > img {
+	position: relative;
+	display: block;
+	margin-top: -15rem;
+	width: 30rem;
+	height: 23rem;
+}
+
+section > h1 {
+	font-size: 2rem;
+	position: relative;
+	justify-content: center;
+	font-weight: bold;
+	color: #e50000;
+}
+
+section p {
+	font-size: 13px;
+}
+
+.section-1, .section-3, .section-5, .section-7, .section-9 {
+	margin-top: 5rem;
+	position: relative;
+	text-align: right;
+}
+
+.section-2, .section-4, .section-6, .section-8, .section-10 {
+	position: relative;
+	text-align: left;
+}
+
+.section-1 > p, .section-3 > p, .section-5 > p, .section-7 > p, .section-9 > p {
+	margin-left: 40rem;
+}
+
+.section-2 > p, .section-4 > p, .section-6 > p, .section-8 > p, .section-10 > p {
+	margin-right: 40rem;
+}
+
+.section-1 > img, .section-3 > img, .section-5 > img, .section-7 > img, .section-9 > img {
+	margin-right: 60rem;
+}
+
+.section-2 > img, .section-4 > img, .section-6 > img, .section-8 > img, .section-10 > img {
+	margin-left: 50rem;
+}
+
+.section-1 > h1 {
+	transform: rotate(90deg);
+	left: 41rem;
+	bottom: 27.5rem;
+}
+
+.section-2 > h1 {
+	transform: rotate(-90deg);
+	right: 41rem;
+	bottom: 27rem;
+}
+
+.section-3 > h1 {
+	transform: rotate(90deg);
+	left: 41rem;
+	bottom: 26rem;
+}
+
+.section-4 > h1 {
+	transform: rotate(-90deg);
+	right: 41rem;
+	bottom: 25.5rem;
+}
+
+.section-5 > h1 {
+	transform: rotate(90deg);
+	left: 41rem;
+	bottom: 26.5rem;
+}
+
+.section-6 > h1 {
+	transform: rotate(-90deg);
+	right: 41rem;
+	bottom: 25.5rem;
+}
+
+.section-7 > h1 {
+	transform: rotate(90deg);
+	left: 41rem;
+	bottom: 24.5rem;
+}
+
+.section-8 > h1 {
+	transform: rotate(-90deg);
+	right: 41rem;
+	bottom: 26rem;
+}
+
+.section-9 > h1 {
+	transform: rotate(90deg);
+	left: 41rem;
+	bottom: 25rem;
+}
+
+.section-10 > h1 {
+	transform: rotate(-90deg);
+	right: 41rem;
+	bottom: 26rem;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 18vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0,0);
+    }
+    100% {
+        transform: translate3d(85px,0,0);
+    }
+}
