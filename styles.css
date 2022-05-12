@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.container-fluid {
+.bg-dark {
 	background-color:#242424;
 	color: white;
 	font-family: Poppins, 'PT Serif', 'Times New Roman', Times, serif, sans-serif;
