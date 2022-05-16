@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.bg-dark {
+.container-fluid {
 	background-color:#242424;
 	color: white;
 	font-family: Poppins, 'PT Serif', 'Times New Roman', Times, serif, sans-serif;
@@ -22,25 +22,13 @@
 	color: white;
 }
 
-#myBtn {
-	background: transparent;
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	z-index: 99;
-	outline: none;
-	font-size: 18px;
-	color: #e50000;
-	cursor: pointer;
-	padding: 14px;
-	border: 3px solid #e50000;
-	border-radius: 30px;
-}
-
-#myBtn:hover {
-    color: #ff7f7f;
-    border: 3px solid #ff7f7f;
+header > img {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 50%;
 }
 
 ul {
@@ -57,7 +45,7 @@ li {
     cursor: pointer;
 }
 
-li a {
+.tr-sh {
     position: relative;
     display: block;
     color: white;
@@ -71,7 +59,7 @@ li:last-child {
     border-right: none;
 }
 
-li a:hover {
+.tr-sh:hover {
     color: #e50000;
     font-weight: bold;
 }
@@ -95,46 +83,55 @@ section > img {
 section > h1 {
 	font-size: 2rem;
 	position: relative;
-	justify-content: center;
+	display: block;
+	justify-content: left;
 	font-weight: bold;
 	color: #e50000;
 }
 
 section p {
+	position: relative;
 	font-size: 13px;
 }
 
-.section-1, .section-3, .section-5, .section-7, .section-9 {
+.section-1, .section-3 {
 	margin-top: 5rem;
 	position: relative;
 	text-align: right;
 }
 
-.section-2, .section-4, .section-6, .section-8, .section-10 {
+.section-2, .section-4 {
 	position: relative;
 	text-align: left;
+	margin-right: none;
 }
 
-.section-1 > p, .section-3 > p, .section-5 > p, .section-7 > p, .section-9 > p {
+.section-1 > p, .section-3 > p {
 	margin-left: 40rem;
 }
 
-.section-2 > p, .section-4 > p, .section-6 > p, .section-8 > p, .section-10 > p {
+.section-2 > p {
 	margin-right: 40rem;
 }
 
-.section-1 > img, .section-3 > img, .section-5 > img, .section-7 > img, .section-9 > img {
+.section-4 > p {
+	margin-left: none;
+	margin-right: 30rem;
+	font-size: .5rem;
+}
+
+.section-1 > img, .section-3 > img {
 	margin-right: 60rem;
 }
 
-.section-2 > img, .section-4 > img, .section-6 > img, .section-8 > img, .section-10 > img {
+.section-2 > img, .section-4 > img {
 	margin-left: 50rem;
 }
 
 .section-1 > h1 {
 	transform: rotate(90deg);
 	left: 41rem;
-	bottom: 27.5rem;
+	margin-bottom: 29rem;
 }
 
 .section-2 > h1 {
@@ -150,45 +147,19 @@ section p {
 }
 
 .section-4 > h1 {
-	transform: rotate(-90deg);
-	right: 41rem;
-	bottom: 25.5rem;
+	font-size: 1rem;
+	bottom: 1rem;
 }
 
-.section-5 > h1 {
-	transform: rotate(90deg);
-	left: 41rem;
-	bottom: 26.5rem;
-}
-
-.section-6 > h1 {
-	transform: rotate(-90deg);
-	right: 41rem;
-	bottom: 25.5rem;
-}
-
-.section-7 > h1 {
-	transform: rotate(90deg);
-	left: 41rem;
-	bottom: 24.5rem;
-}
-
-.section-8 > h1 {
-	transform: rotate(-90deg);
-	right: 41rem;
-	bottom: 26rem;
-}
-
-.section-9 > h1 {
-	transform: rotate(90deg);
-	left: 41rem;
-	bottom: 25rem;
-}
-
-.section-10 > h1 {
-	transform: rotate(-90deg);
-	right: 41rem;
-	bottom: 26rem;
+#fsf {
+	position: relative;
+	display: block;
+	background-color: transparent;
+	width: 33%;
+	height: 33vh;
+	bottom: -7rem;
+	margin-left: none;
+	margin-right: 1rem;
 }
 
 .waves {
