@@ -7,28 +7,20 @@
 	font-family: Poppins, 'PT Serif', 'Times New Roman', Times, serif, sans-serif;
 }
 
+header {
+	position: relative;
+	display: block;
+	margin: none;
+}
+
 #title {
 	position: relative;
+	display: block;
 	justify-content: center;
 	text-align: center;
 	font-weight: bold;
 	font-size: 3.5rem;
-	margin-bottom: 10rem;
-
-}
-
-#title > a {
-	text-decoration: none;
-	color: white;
-}
-
-header > img {
-	position: relative;
-	display: block;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	height: 50%;
+	margin: none;
 }
 
 ul {
@@ -95,7 +87,7 @@ section p {
 }
 
 .section-1, .section-3 {
-	margin-top: 5rem;
+	margin-top: none;
 	position: relative;
 	text-align: right;
 }
@@ -107,6 +99,7 @@ section p {
 }
 
 .section-1 > p, .section-3 > p {
+	margin-top: none;
 	margin-left: 40rem;
 }
 
