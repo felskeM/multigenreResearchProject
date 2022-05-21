@@ -11,6 +11,7 @@ header {
 	position: relative;
 	display: block;
 	margin: none;
+	padding: none;
 }
 
 #title {
@@ -25,6 +26,7 @@ header {
 
 ul {
 	text-align: center;
+	justify-content: center;
     list-style-type: none;
     margin: none;
     padding: none;
@@ -32,9 +34,13 @@ ul {
 }
 
 li {
+	position: float;
+	display: block;
+	text-align: center;
     float: left;
     border-right: 1px solid white;
     cursor: pointer;
+    margin-bottom: none;
 }
 
 .tr-sh {
@@ -43,6 +49,7 @@ li {
     color: white;
     text-align: center;
     padding: 14px 16px;
+    margin: none;
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -57,7 +64,7 @@ li:last-child {
 }
 
 section {
-	justify-content: space-between;
+	display: block;
 	margin-left: 3rem;
 	margin-right: 3rem;
 	margin-bottom: 8rem;
@@ -66,10 +73,21 @@ section {
 
 section > img {
 	position: relative;
-	display: block;
-	margin-top: -15rem;
+	display: inline-block;
+	margin-top: -17rem;
 	width: 30rem;
+}
+
+#indi {
 	height: 23rem;
+}
+
+#commi {
+	height: 25rem;
+}
+
+#aztec {
+	height: 27rem;
 }
 
 section > h1 {
@@ -142,17 +160,6 @@ section p {
 .section-4 > h1 {
 	font-size: 1rem;
 	bottom: 1rem;
-}
-
-#fsf {
-	position: relative;
-	display: block;
-	background-color: transparent;
-	width: 33%;
-	height: 33vh;
-	bottom: -7rem;
-	margin-left: none;
-	margin-right: 1rem;
 }
 
 .waves {
